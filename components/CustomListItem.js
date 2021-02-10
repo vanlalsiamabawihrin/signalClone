@@ -38,7 +38,9 @@ const CustomListItem = ({ id, chatName, enterChat }) => {
         </ListItem.Title>
 
         <ListItem.Subtitle numberOfLines={1} ellipsizeMode="tail">
-          Mino Thawngthannak le Bia i ruahnak
+          {/* chatMessage.length - 1 refers to the last user details  */}
+          {chatMessages?.[chatMessages.length - 1]?.displayName} :{" "}
+          {chatMessages?.[chatMessages.length - 1]?.message}
         </ListItem.Subtitle>
       </ListItem.Content>
     </ListItem>

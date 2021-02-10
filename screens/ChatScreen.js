@@ -70,6 +70,7 @@ const ChatScreen = ({ navigation, route }) => {
         <View style={{ flexDirection: "row", alignItems: "center" }}>
           <Avatar
             source={{
+              // {/* chatMessage.length - 1 refers to the last user photo  */}
               uri: messages[messages.length - 1]?.data.photoURL,
             }}
             rounded
